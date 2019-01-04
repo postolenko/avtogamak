@@ -303,11 +303,9 @@ textarea:focus {
 
 .row {
     max-width: 600px;
-    /*max-width: 320px;*/
     min-width: 300px;
     padding: 0 5px;
     margin: 0 auto;
-    /*outline: 1px solid red;*/
 }
 
 .offset-ziro {
