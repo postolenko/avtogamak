@@ -282,19 +282,42 @@ a:active {
 }
 
 input {
-
+    display: block;
+    width: 100%;
+    border: 1px solid #d19a27;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    height: 46px;
+    padding: 0 10px;
+    font-family: "Exo 2", "Arial", "Verdana", sans-serif;
+    font-size: 20px;
+    line-height: 45px;
+    color: #212121;
 }
 
 input:focus {
-
+    border-color: #ebd03c;
 }
 
 textarea {
-
+    display: block;
+    width: 100%;
+    height: 100px;
+    border: 1px solid #d19a27;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    height: 130px;
+    padding: 11px 10px;
+    font-family: "Exo 2", "Arial", "Verdana", sans-serif;
+    font-size: 20px;
+    line-height: 22px;
+    color: #212121;
 }
 
-textarea:focus {
-
+input:focus {
+    border-color: #ebd03c;
 }
 
 /*-------------------------------------------*/
@@ -434,8 +457,10 @@ textarea:focus {
 .yellow_pill {
     display: inline-block;
     vertical-align: top;
+    cursor: pointer;
     margin: 1px 0;
     padding: 7px 10px 7px 10px;
+    border: 1px solid transparent;
     background-image: -moz-linear-gradient( 90deg, rgb(198,131,30) 12%, rgb(236,210,61) 100%);
     background-image: -webkit-linear-gradient( 90deg, rgb(198,131,30) 12%, rgb(236,210,61) 100%);
     background-image: -ms-linear-gradient( 90deg, rgb(198,131,30) 12%, rgb(236,210,61) 100%);
@@ -673,7 +698,7 @@ textarea:focus {
 }
 
 .thumb_1 p {
-    font-size: 19.5px;
+    font-size: 18px;
     line-height: 23px;
     text-align: center;
 }
@@ -735,7 +760,7 @@ textarea:focus {
 .colors p {
     padding: 3px 0;
     text-align: center;
-    font-size: 21px;
+    font-size: 20px;
     line-height: 27px;
     color: #252c33;
 }
@@ -789,6 +814,15 @@ textarea:focus {
     background-position: center;
 }
 
+.fancybox_wrapp {
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: -99999px;
+    z-index: -1;
+}
+
 .popup_link_p {
     margin: 5px 0;
     text-align: center;
@@ -816,7 +850,7 @@ textarea:focus {
     display: inline-block;
     vertical-align: middle;
     border-bottom: 1px solid #585d63;
-    font-size: 19.5px;
+    font-size: 18px;
     line-height: 20px;
     color: #252c33;
     -webkit-transition-property: border-bottom;
@@ -879,8 +913,8 @@ textarea:focus {
     border-right: 1px solid transparent;
     border-bottom: 2px dotted #5f5f5f;
     padding: 3px 17px;
-    font-size: 22px;
-    line-height: 26px;
+    font-size: 21px;
+    line-height: 25px;
     color: #5f5f5f;
 }
 
@@ -936,14 +970,6 @@ textarea:focus {
     line-height: 18px;
     color: #5f5f5f;
 }
-
-/*.dropdown_box.activated .dropdown {
-    display: none;
-}
-
-.dropdown_box.activated.active .dropdown {
-    display: block;
-}*/
 
 .dropdown_box.activated.active .dropdown_btn:before {
     border-color: #ffffff transparent transparent transparent;
@@ -1023,6 +1049,11 @@ textarea:focus {
     position: relative;
 }
 
+.old_price .ruble {
+    font-size: 32px;
+    padding-left: 3px;
+}
+
 .old_price:before {
     content: "";
     width: 100%;
@@ -1058,9 +1089,7 @@ textarea:focus {
 }
 
 .btn_wrapp {    
-    margin: 20px 0 3px 0;
-    padding: 6px 0;
-    background-color: #e5e5e5;
+    margin: 26px 0 9px 0;
     text-align: center;
 }
 
@@ -1068,6 +1097,7 @@ textarea:focus {
     display: inline-block;
     vertical-align: top;
     min-width: 262px;
+    cursor: pointer;
     text-align: center;
     padding: 15px 10px;
     -webkit-border-radius: 30px;
@@ -1078,6 +1108,9 @@ textarea:focus {
     background: -webkit-linear-gradient(top, #d89d2b 0%,#b75300 100%);
     background: linear-gradient(to bottom, #d89d2b 0%,#b75300 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d89d2b', endColorstr='#b75300',GradientType=0 );
+    border-top: none;
+    border-left: none;
+    border-right: none;
     border-bottom: 3px solid #7d3400;
     -webkit-text-shadow: 0 2px 2px rgba(0,0,0,.4);
     -moz-text-shadow: 0 2px 2px rgba(0,0,0,.4);
@@ -1123,6 +1156,10 @@ textarea:focus {
     width: 50%;
 }
 
+.two-cols_2 .hit {
+    margin: 0 auto;
+}
+
 .two-cols_3 {
     text-align: center;    
 }
@@ -1159,7 +1196,7 @@ textarea:focus {
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
-    font-size: 50px;
+    font-size: 48px;
     line-height: 60px;
     font-weight: bold;
 }
@@ -1471,3 +1508,103 @@ p.p_desc {
     line-height: 18px;
     font-weight: bold;
 }
+
+/*-- Popup --*/
+
+body.popupshow {
+    overflow: hidden;
+    padding-right: 17px;
+}
+
+.popup_wrapp {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    z-index: 15;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 15;
+    outline: 0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.popup_wrapp .inner_wrapp {
+    padding: 1px 2%;
+    min-height: 100vh;
+    position: relative;
+}
+
+.popup_bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .7);
+}
+
+.popup {
+    max-width: 510px;
+    margin: 70px auto 35px auto;
+    padding: 34px 20px 16px 20px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background-color: rgb(250, 250, 250);
+    -webkit-box-shadow: 0 10px 25px 0 rgba(31, 28, 22, .2);
+    -moz-box-shadow: 0 10px 25px 0 rgba(31, 28, 22, .2);
+    box-shadow: 0 10px 25px 0 rgba(31, 28, 22, .2);
+    position: relative;
+    z-index: 2;
+}
+
+.close-popup {
+    overflow: hidden;
+    background-color: transparent;
+    border: 1px solid transparent;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    z-index: 12;
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    background-image: url(img/close.svg);
+    background-size: contain;
+    background-position: center;
+}
+
+.popup_inner {
+    max-width: 370px;
+    margin: 0 auto;
+}
+
+.popup h3 {
+    padding: 10px 0;
+    text-align: center;
+}
+
+.input_wrapp {
+    padding: 7px 0;
+}
+
+.submit_wrapp {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.submit_wrapp .orange_pill {
+    min-width: 100%;
+    padding: 12px 10px;
+    font-size: 21px;
+    line-height: 22px;
+}
+
+/*-- /Popup --*/

@@ -8,11 +8,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" >
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="">
-	<link rel="stylesheet" type="text/css" href="style.css">	
-	<link rel="stylesheet" type="text/css" href="responsive.css">
-	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
-	<link rel="stylesheet" type="text/css" href="slick/slick.css">
-	<link rel="stylesheet" type="text/css" href="vendors/css/jquery.mCustomScrollbar.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="vendors/css/jquery.fancybox.css">
 	<link rel="icon" type="image/png" href="favicon/favicon.ico" sizes="16x16">
 <!-- 	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script> -->
 	<title>Автогамак</title>
@@ -34,7 +31,7 @@
 					<a href="#" class="tel_link">8 (965) 757-77-79</a>
 				</div>
 				<div class="right">
-					<a href="#" class="yellow_pill">ПЕРЕЗВОНИТЬ</a>
+					<a href="#" class="yellow_pill" data-popup-name = "popup_1">ПЕРЕЗВОНИТЬ</a>
 				</div>
 			</div>
 			<div class="row">
@@ -106,7 +103,7 @@
 
 				<div class="row">
 
-					<div class="article">
+					<div class="article" id="first_good">
 						<h3>ТРАНСФОРМЕР<br /> (НА ВСЁ, НА 1/3<br /> И НА 2/3 СИДЕНЬЯ)</h3>
 						<div class="img-box">
 							<img src="img/img_01.jpg" alt="" />
@@ -116,10 +113,17 @@
 							<p>Цвета (3990р.) <i class="color grey"></i> либо <i class="color black"></i></p>
 							<p>Цвета (4490р.) <i class="color red"></i><i class="color blue"></i><i class="color pink"></i><i class="color texture_1"></i><i class="color texture_2"></i></p>
 						</div>
-						<p class="popup_link_p"><a href="#" class="popup_link"><i class="photo"></i><span>ФОТО ВСЕХ ЦВЕТОВ</span></a></p>
+						<p class="popup_link_p"><a href="#" class="popup_link" data-fancywrapp = "1"><i class="photo"></i><span>ФОТО ВСЕХ ЦВЕТОВ</span></a></p>
+
+						<div class="fancybox_wrapp" data-fancy-slides = "1">
+							<a href="img/img_01.jpg" data-fancybox="1"></a>
+							<a href="img/img_02.jpg" data-fancybox="1"></a>
+							<a href="img/img_03.jpg" data-fancybox="1"></a>
+							<a href="img/img_04.jpg" data-fancybox="1"></a>
+						</div>
 
 						<div class="dropdown_boxes_wrapp">
-							<div class="dropdown_box active">
+							<div class="dropdown_box">
 								<button type="button" class="dropdown_btn">Комплектация</button>
 								<div class="dropdown">
 									<p>* Автогамак трансформер с возможности трнасформации на все. на 2/3 и на 1/3 сидения</p>
@@ -134,20 +138,27 @@
 								<button type="button" class="dropdown_btn">Характеристики</button>
 								<div class="dropdown">
 									<p>3х слойный усиленный.</p>
-									<p>Водонепроницаемый верхний слой. Амортизирующий толстый средний слой. Возможность посадки одного или двух пассажиров. Надежная фиксация:за передние и задние подголовники, в гнезда ремней, а так же на ручки над дверью.</p>
+									<p>Водонепроницаемый верхний слой. Амортизирующий толстый средний слой. Возможность посадки одного или двух пассажиров. Надежная фиксация: за передние и задние подголовники, в гнезда ремней, а также на ручки над дверью.</p>
 								</div>
 							</div>
 							<div class="dropdown_box">
 								<button type="button" class="dropdown_btn">Применение</button>
 								<div class="dropdown">
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+									<p>КОГДА НУЖНО ПОСАДИТЬ 1 ИЛИ 2 ПАССАЖИРОВ. ДЛЯ СОБАК ЛЮБОГО РАЗМЕРА. ДЛЯ СОБАК НА ВЫРОСТ (ОТ ЩЕНКОВ ДО КРУПНЫХ).  ПОДОЙДЕТ И В БАГАЖНИК! <b>НА ВСЕ СЛУЧАИ ЖИЗНИ!</b></p>
 								</div>
 							</div>
 						</div>
 
-						<p class="popup_link_p"><a href="#" class="popup_link popup_link_2"><i class="photo"></i><span>Фото конструкции</span></a></p>
+						<p class="popup_link_p"><a href="#" class="popup_link popup_link_2" data-fancywrapp = "2"><i class="photo"></i><span>Фото конструкции</span></a></p>
 
-						<p class="popup_link_p"><a href="#" class="popup_link popup_link_2"><i class="youtube"></i><span>Видео-обзор аналога</span></a></p>
+						<div class="fancybox_wrapp" data-fancy-slides = "2">
+							<a href="img/img_01.jpg" data-fancybox="2"></a>
+							<a href="img/img_02.jpg" data-fancybox="2"></a>
+							<a href="img/img_03.jpg" data-fancybox="2"></a>
+							<a href="img/img_04.jpg" data-fancybox="2"></a>
+						</div>
+
+						<p class="popup_link_p"><a href="https://www.youtube.com/watch?v=5ogytPhXyBY" class="popup_link popup_link_2" data-fancybox><i class="youtube"></i><span>Видео-обзор аналога</span></a></p>
 
 						<div class="two-cols clearfix">
 							<div class="left">
@@ -157,7 +168,7 @@
 								</div>
 							</div>
 							<div class="right">
-								<p class="old_price">5800</p>
+								<p class="old_price">5800<span class="ruble">&#8381;</span></p>
 								<p class="price">3990</p>
 							</div>
 						</div>
@@ -165,7 +176,7 @@
 						<p class="p-desc">До 29.12.18 чехлы подголовников в ПОДАРОК!</p>
 
 						<div class="btn_wrapp">
-							<a href="#" class="orange_pill">Оставить заявку</a>
+							<a href="#" class="orange_pill" data-popup-name = "popup_1">Оставить заявку</a>
 						</div>
 
 					</div>
@@ -181,43 +192,56 @@
 							<p>Цвета (3990р.) <i class="color grey"></i> либо <i class="color black"></i></p>
 							<p>Цвета (4490р.) <i class="color red"></i><i class="color blue"></i><i class="color pink"></i><i class="color texture_1"></i><i class="color texture_2"></i></p>
 						</div>
-						<p class="popup_link_p"><a href="#" class="popup_link"><i class="photo"></i><span>ФОТО ВСЕХ ЦВЕТОВ</span></a></p>
+						<p class="popup_link_p"><a href="#" class="popup_link" data-fancywrapp = "4"><i class="photo"></i><span>ФОТО ВСЕХ ЦВЕТОВ</span></a></p>
+
+						<div class="fancybox_wrapp" data-fancy-slides = "4">
+							<a href="img/img_01.jpg" data-fancybox="4"></a>
+							<a href="img/img_02.jpg" data-fancybox="4"></a>
+							<a href="img/img_03.jpg" data-fancybox="4"></a>
+							<a href="img/img_04.jpg" data-fancybox="4"></a>
+						</div>
 
 						<div class="dropdown_boxes_wrapp">
-							<div class="dropdown_box active">
+							<div class="dropdown_box">
 								<button type="button" class="dropdown_btn">Комплектация</button>
 								<div class="dropdown">
-									<p>* Автогамак трансформер с возможности трнасформации на все. на 2/3 и на 1/3 сидения</p>
+									<p>* Автогамак на всё сиденье (3-хслойный)</p>
 									<p>* 5 чехлов подголовников (подарок)</p>
 									<p>*Лямки для боковин на ручки над дверью</p>
 									<p>*Поводок для фиксации на ошейник</p>
-									<p>*Подвесной карман для поилки/кармилки</p>
-									<p>*Металлический крепеж в гнездо ремня</p>
+									<p>*Крепежи в гнездо ремня снизу</p>
 								</div>
 							</div>
 							<div class="dropdown_box">
 								<button type="button" class="dropdown_btn">Характеристики</button>
 								<div class="dropdown">
 									<p>3х слойный усиленный.</p>
-									<p>Водонепроницаемый верхний слой. Амортизирующий толстый средний слой. Возможность посадки одного или двух пассажиров. Надежная фиксация:за передние и задние подголовники, в гнезда ремней, а так же на ручки над дверью.</p>
+									<p>Водонепроницаемый верхний слой. Амортизирующий толстый средний слой. Простор для собаки: всё заднее сиденье. Надежная фиксация: за передние и задние подголовники, в гнезда ремней, а также на ручки над дверью.</p>
 								</div>
 							</div>
 							<div class="dropdown_box">
 								<button type="button" class="dropdown_btn">Применение</button>
 								<div class="dropdown">
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+									<p>ДЛЯ АКТИВНЫХ СОБАК ЛЮБОГО РАЗМЕРА. ДЛЯ ВСЕХ ТИПОВ АВТО (С ПОДГОЛОВНИКАМИ) + МОЖНО ИСПОЛЬЗОВАТЬ И НА СИДЕНЬЕ И В БАГАЖНИКЕ</p>
 								</div>
 							</div>
 						</div>
 
-						<p class="popup_link_p"><a href="#" class="popup_link popup_link_2"><i class="photo"></i><span>Фото конструкции</span></a></p>
+						<p class="popup_link_p"><a href="#" class="popup_link popup_link_2" data-fancywrapp = "5"><i class="photo"></i><span>Фото конструкции</span></a></p>
 
-						<p class="popup_link_p"><a href="#" class="popup_link popup_link_2"><i class="youtube"></i><span>Видео-обзор аналога</span></a></p>
+						<div class="fancybox_wrapp" data-fancy-slides = "5">
+							<a href="img/img_01.jpg" data-fancybox="5"></a>
+							<a href="img/img_02.jpg" data-fancybox="5"></a>
+							<a href="img/img_03.jpg" data-fancybox="5"></a>
+							<a href="img/img_04.jpg" data-fancybox="5"></a>
+						</div>
+
+						<p class="popup_link_p"><a href="https://www.youtube.com/watch?v=5ogytPhXyBY" class="popup_link popup_link_2" data-fancybox><i class="youtube"></i><span>Видео-обзор аналога</span></a></p>
 
 						<div class="two-cols_2 clearfix">
 							<div class="left">
 								<div class="share_box">
-									<p class="old_price">3500</p>
+									<p class="old_price">3500<span class="ruble">&#8381;</span></p>
 									<p><a href="#" class="line_link">АКЦИЯ</a></p>
 								</div>
 							</div>
@@ -240,7 +264,7 @@
 						<p class="p-desc">До 29.12.18 чехлы<br /> подголовников в ПОДАРОК!</p>
 
 						<div class="btn_wrapp">
-							<a href="#" class="orange_pill">Оставить заявку</a>
+							<a href="#" class="orange_pill" data-popup-name = "popup_1">Оставить заявку</a>
 						</div>
 
 					</div>
@@ -256,43 +280,56 @@
 							<p>Цвета (3990р.) <i class="color grey"></i> либо <i class="color black"></i></p>
 							<p>Цвета (4490р.) <i class="color red"></i><i class="color blue"></i><i class="color pink"></i><i class="color texture_1"></i><i class="color texture_2"></i></p>
 						</div>
-						<p class="popup_link_p"><a href="#" class="popup_link"><i class="photo"></i><span>ФОТО ВСЕХ ЦВЕТОВ</span></a></p>
+						<p class="popup_link_p"><a href="#" class="popup_link" data-fancywrapp = "6"><i class="photo"></i><span>ФОТО ВСЕХ ЦВЕТОВ</span></a></p>
+
+						<div class="fancybox_wrapp" data-fancy-slides = "6">
+							<a href="img/img_01.jpg" data-fancybox="6"></a>
+							<a href="img/img_02.jpg" data-fancybox="6"></a>
+							<a href="img/img_03.jpg" data-fancybox="6"></a>
+							<a href="img/img_04.jpg" data-fancybox="6"></a>
+						</div>
 
 						<div class="dropdown_boxes_wrapp">
-							<div class="dropdown_box active">
+							<div class="dropdown_box">
 								<button type="button" class="dropdown_btn">Комплектация</button>
 								<div class="dropdown">
-									<p>* Автогамак трансформер с возможности трнасформации на все. на 2/3 и на 1/3 сидения</p>
-									<p>* 5 чехлов подголовников (подарок)</p>
-									<p>*Лямки для боковин на ручки над дверью</p>
+									<p>* Автогамак на  2/3 сиденья (3-хслойный)</p>
+									<p>*3 чехлов подголовников (подарок)</p>
+									<p>*Лямки для боковины на ручку над дверью</p>
 									<p>*Поводок для фиксации на ошейник</p>
-									<p>*Подвесной карман для поилки/кармилки</p>
-									<p>*Металлический крепеж в гнездо ремня</p>
+									<p>*Крепеж в гнездо ремня снизу</p>
 								</div>
 							</div>
 							<div class="dropdown_box">
 								<button type="button" class="dropdown_btn">Характеристики</button>
 								<div class="dropdown">
 									<p>3х слойный усиленный.</p>
-									<p>Водонепроницаемый верхний слой. Амортизирующий толстый средний слой. Возможность посадки одного или двух пассажиров. Надежная фиксация:за передние и задние подголовники, в гнезда ремней, а так же на ручки над дверью.</p>
+									<p>Водонепроницаемый верхний слой. Амортизирующий толстый средний слой. Компактный размер: можно посадить пассажира. Надежная фиксация: за передние и задние подголовники, в гнездо ремня, а также на ручку над дверью.</p> 
 								</div>
 							</div>
 							<div class="dropdown_box">
 								<button type="button" class="dropdown_btn">Применение</button>
 								<div class="dropdown">
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+									<p>ЧТОБЫ МОГ СЕСТЬ ПАССАЖИР. ДЛЯ СОБАК ЛЮБОГО РАЗМЕРА. ДЛЯ ВСЕХ ТИПОВ АВТО (С ПОДГОЛОВНИКАМИ)</p>
 								</div>
 							</div>
 						</div>
 
-						<p class="popup_link_p"><a href="#" class="popup_link popup_link_2"><i class="photo"></i><span>Фото конструкции</span></a></p>
+						<p class="popup_link_p"><a href="#" class="popup_link popup_link_2" data-fancywrapp = "7"><i class="photo"></i><span>Фото конструкции</span></a></p>
 
-						<p class="popup_link_p"><a href="#" class="popup_link popup_link_2"><i class="youtube"></i><span>Видео-обзор аналога</span></a></p>
+						<div class="fancybox_wrapp" data-fancy-slides = "7">
+							<a href="img/img_01.jpg" data-fancybox="7"></a>
+							<a href="img/img_02.jpg" data-fancybox="7"></a>
+							<a href="img/img_03.jpg" data-fancybox="7"></a>
+							<a href="img/img_04.jpg" data-fancybox="7"></a>
+						</div>
+
+						<p class="popup_link_p"><a href="https://www.youtube.com/watch?v=5ogytPhXyBY" class="popup_link popup_link_2" data-fancybox ><i class="youtube"></i><span>Видео-обзор аналога</span></a></p>
 
 						<div class="two-cols_2 clearfix">
 							<div class="left">
 								<div class="share_box">
-									<p class="old_price">3500</p>
+									<p class="old_price">3500<span class="ruble">&#8381;</span></p>
 									<p><a href="#" class="line_link">АКЦИЯ</a></p>
 								</div>
 							</div>
@@ -315,7 +352,7 @@
 						<p class="p-desc">До 29.12.18 чехлы<br /> подголовников в ПОДАРОК!</p>
 
 						<div class="btn_wrapp">
-							<a href="#" class="orange_pill">Оставить заявку</a>
+							<a href="#" class="orange_pill" data-popup-name = "popup_1">Оставить заявку</a>
 						</div>
 
 					</div>
@@ -325,7 +362,7 @@
 					<div class="article">
 						<h3>Автогамак в<br /> багажник авто<br /> многослойный </h3>
 						<div class="img-box">
-							<img src="img/img_03.jpg" alt="" />
+							<img src="img/img_04.jpg" alt="" />
 						</div>
 						<div class="text_wrapp">
 							<p>3 СЛОЯ, УСИЛЕННЫЙ
@@ -351,7 +388,7 @@
 								</div>
 							</div>
 							<div class="right">
-								<p class="old_price">5800</p>
+								<p class="old_price">5800<span class="ruble">&#8381;</span></p>
 								<p class="price">3990</p>
 							</div>
 						</div>
@@ -359,7 +396,7 @@
 						<p class="p-desc">До 29.12.18 чехлы<br /> подголовников в ПОДАРОК!</p>
 
 						<div class="btn_wrapp">
-							<a href="#" class="orange_pill">Оставить заявку</a>
+							<a href="#" class="orange_pill" data-popup-name = "popup_1">Оставить заявку</a>
 						</div>
 
 					</div>
@@ -369,45 +406,49 @@
 					<div class="article">
 						<h3>ЧЕХОЛ-БОКС<br /> НА ОДНО СИДЕНЬЕ<br /> МНОГОСЛОЙНЫЙ</h3>
 						<div class="img-box">
-							<img src="img/img_01.jpg" alt="" />
+							<img src="img/img_05.jpg" alt="" />
 						</div>
 						<div class="colors">
 							<p>Цвета <i class="color grey"></i><i class="color blue"></i><i class="color black"></i></p>
 						</div>
 
 						<div class="dropdown_boxes_wrapp">
-							<div class="dropdown_box active">
+							<div class="dropdown_box">
 								<button type="button" class="dropdown_btn">Комплектация</button>
 								<div class="dropdown">
-									<p>* Автогамак трансформер с возможности трнасформации на все. на 2/3 и на 1/3 сидения</p>
-									<p>* 5 чехлов подголовников (подарок)</p>
-									<p>*Лямки для боковин на ручки над дверью</p>
+									<p>* Автогамак на  1 сиденье (3-хслойный)</p>
+									<p>*1 чехол подголовника (подарок)</p>
 									<p>*Поводок для фиксации на ошейник</p>
-									<p>*Подвесной карман для поилки/кармилки</p>
-									<p>*Металлический крепеж в гнездо ремня</p>
 								</div>
 							</div>
 							<div class="dropdown_box">
 								<button type="button" class="dropdown_btn">Характеристики</button>
 								<div class="dropdown">
 									<p>3х слойный усиленный.</p>
-									<p>Водонепроницаемый верхний слой. Амортизирующий толстый средний слой. Возможность посадки одного или двух пассажиров. Надежная фиксация:за передние и задние подголовники, в гнезда ремней, а так же на ручки над дверью.</p>
+									<p>Водонепроницаемый верхний слой. Амортизирующий толстый средний слой. Компактный размер: занимает всего 1 место. Надежная фиксация: за подголовник, за под сиденье и в стык между сиденьем и спинкой.  Можно выворачивать и делать чехол сиденья.</p>
 								</div>
 							</div>
 							<div class="dropdown_box">
 								<button type="button" class="dropdown_btn">Применение</button>
 								<div class="dropdown">
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+									<p>ПОРОДЫ: МАЛЫЕ И СРЕДНИЕ. Когда нужно максимум места для пассажиров</p>
 								</div>
 							</div>
 						</div>
 
-						<p class="popup_link_p"><a href="#" class="popup_link popup_link_2"><i class="photo"></i><span>Фото цветов и моделей</span></a></p>
+						<p class="popup_link_p"><a href="#" class="popup_link popup_link_2" data-fancywrapp = "8"><i class="photo"></i><span>Фото цветов и моделей</span></a></p>
+
+						<div class="fancybox_wrapp" data-fancy-slides = "8">
+							<a href="img/img_01.jpg" data-fancybox="8"></a>
+							<a href="img/img_02.jpg" data-fancybox="8"></a>
+							<a href="img/img_03.jpg" data-fancybox="8"></a>
+							<a href="img/img_04.jpg" data-fancybox="8"></a>
+						</div>
 
 						<div class="two-cols clearfix">
 							<div class="left">
 								<div class="share_box">
-									<p class="old_price">2400</p>
+									<p class="old_price">2400<span class="ruble">&#8381;</span></p>
 									<p><a href="#" class="line_link">АКЦИЯ</a></p>
 								</div>
 							</div>
@@ -419,7 +460,7 @@
 						<p class="p-desc">До 29.12.18 чехлы подголовников в ПОДАРОК!</p>
 
 						<div class="btn_wrapp">
-							<a href="#" class="orange_pill">Оставить заявку</a>
+							<a href="#" class="orange_pill" data-popup-name = "popup_1">Оставить заявку</a>
 						</div>
 
 					</div>
@@ -438,36 +479,45 @@
 
 						<div class="dropdown_boxes_wrapp">
 
-							<div class="dropdown_box active">
+							<div class="dropdown_box">
 								<button type="button" class="dropdown_btn">Комплектация</button>
 								<div class="dropdown">
-									<p>* Автогамак трансформер с возможности трнасформации на все. на 2/3 и на 1/3 сидения</p>
+									<p>* Автогамак трансформер (пол 6 слоев) с возможности трнасформации на все. на 2/3 и на 1/3 сидения</p>
 									<p>* 5 чехлов подголовников (подарок)</p>
 									<p>*Лямки для боковин на ручки над дверью</p>
 									<p>*Поводок для фиксации на ошейник</p>
 									<p>*Подвесной карман для поилки/кармилки</p>
 									<p>*Металлический крепеж в гнездо ремня</p>
+									<p>*Чехол верхнего торца сиденья</p>
 								</div>
 							</div>
 							<div class="dropdown_box">
 								<button type="button" class="dropdown_btn">Характеристики</button>
 								<div class="dropdown">
 									<p>3х слойный усиленный.</p>
-									<p>Водонепроницаемый верхний слой. Амортизирующий толстый средний слой. Возможность посадки одного или двух пассажиров. Надежная фиксация:за передние и задние подголовники, в гнезда ремней, а так же на ручки над дверью.</p>
+									<p>Пол гамака 6 слоев.</p>
+									<p>Водонепроницаемый верхний слой. Амортизирующий толстый средний слой. Возможность посадки одного или двух пассажиров. Надежная фиксация: за передние и задние подголовники, в гнезда ремней, а также на ручки над дверью. Отдельные чехлы на верхние торцы сиденья.</p>
 								</div>
 							</div>
 							<div class="dropdown_box">
 								<button type="button" class="dropdown_btn">Применение</button>
 								<div class="dropdown">
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+									<p>МАКСИМАЛЬНАЯ ЗАЩИТА. КОГДА НУЖНО ПОСАДИТЬ 1 ИЛИ 2 ПАССАЖИРОВ. ДЛЯ СОБАК ЛЮБОГО РАЗМЕРА. ДЛЯ СОБАК НА ВЫРОСТ (ОТ ЩЕНКОВ ДО КРУПНЫХ).  ПОДОЙДЕТ И В БАГАЖНИК! <b>НА ВСЕ СЛУЧАИ ЖИЗНИ!</b></p>
 								</div>
 							</div>
 
 						</div>
 
-						<p class="popup_link_p"><a href="#" class="popup_link popup_link_2"><i class="photo"></i><span>Фото конструкции</span></a></p>
+						<p class="popup_link_p"><a href="#" class="popup_link popup_link_2" data-fancywrapp = "9"><i class="photo"></i><span>Фото конструкции</span></a></p>
 
-						<p class="popup_link_p"><a href="#" class="popup_link popup_link_2"><i class="youtube"></i><span>Видео-обзор аналога</span></a></p>
+						<div class="fancybox_wrapp" data-fancy-slides = "9">
+							<a href="img/img_01.jpg" data-fancybox="9"></a>
+							<a href="img/img_02.jpg" data-fancybox="9"></a>
+							<a href="img/img_03.jpg" data-fancybox="9"></a>
+							<a href="img/img_04.jpg" data-fancybox="9"></a>
+						</div>
+
+						<p class="popup_link_p"><a href="https://www.youtube.com/watch?v=5ogytPhXyBY" class="popup_link popup_link_2" data-fancybox><i class="youtube"></i><span>Видео-обзор аналога</span></a></p>
 
 						<div class="two-cols clearfix">
 							<div class="left">
@@ -477,7 +527,7 @@
 								</div>
 							</div>
 							<div class="right">
-								<p class="old_price">5800</p>
+								<p class="old_price">5800<span class="ruble">&#8381;</span></p>
 								<p class="price">3990</p>
 							</div>
 						</div>
@@ -485,7 +535,7 @@
 						<p class="p-desc">До 29.12.18 чехлы подголовников в ПОДАРОК!</p>
 
 						<div class="btn_wrapp">
-							<a href="#" class="orange_pill">Оставить заявку</a>
+							<a href="#" class="orange_pill" data-popup-name = "popup_1">Оставить заявку</a>
 						</div>
 
 					</div>
@@ -781,13 +831,35 @@
 	<!-- /Footer -->
 
 	<script src="vendors/js/jquery.js"></script>
-	<script src="slick/slick.js"></script>
-	<script src="vendors/js/jquery.mCustomScrollbar.concat.min.js"></script>
 	<script src="vendors/js/smoothscroll.js"></script>
+	<script src="vendors/js/jquery.fancybox.js"></script>
 	<script src="js/scripts.js"></script>
-	<script src="js/additional_scripts.js"></script>
-	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-	<script src="js/map.js"></script>
+	<!-- <script src="js/additional_scripts.js"></script> -->
+<!-- 	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+	<script src="js/map.js"></script> -->
+
+	<!-- Popup -->
+
+	<div class="popup_wrapp" data-popup ="popup_1">
+		<div class="inner_wrapp">
+			<div class="popup_bg"></div>
+			<div class="popup">
+				<button type="button" class="close-popup"></button>
+				<h3>Заказать бесплатно обратный звонок</h3>
+				<div class="input_wrapp">
+					<input type="text" name="" placeholder="Ваше имя" />
+				</div>
+				<div class="input_wrapp">
+					<input type="tel" name="" placeholder="Ваш телефон" />
+				</div>
+				<div class="submit_wrapp">
+					<button type="submit" class="orange_pill">Перезвоните мне</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- /Popup -->
 
 </body>
 </html>
