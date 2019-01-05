@@ -27,11 +27,14 @@ $(window).load(function() {
 
 	});
 
+	getPromoTrParams();
+
 });
 
 $(window).resize(function() {
     
 	getFooterPosition();
+	getPromoTrParams();
 
 });
 
@@ -142,5 +145,13 @@ function getFooterPosition() {
     $(".wrapper").css({
         "padding-bottom" : $(".footer_section").height() + "px"
     });
+
+}
+
+function getPromoTrParams() {
+
+	$(".promo_desc .white_tr, .promo_desc .blue-tr").css({
+		"border-width" : "0 0 " + $(".promo_desc").height() +"px 17px"
+	});
 
 }
