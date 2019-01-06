@@ -1579,12 +1579,12 @@ body.popupshow {
     overflow: hidden;
     background-color: transparent;
     border: 1px solid transparent;
-    width: 15px;
-    height: 15px;
+    width: 25px;
+    height: 25px;
     cursor: pointer;
     z-index: 12;
     position: absolute;
-    top: 15px;
+    top: 10px;
     right: 10px;
     background-image: url(img/close.svg);
     background-size: contain;
@@ -1618,3 +1618,9 @@ body.popupshow {
 }
 
 /*-- /Popup --*/
+
+.fancybox-button {
+    width: 53px !important;
+    height: 53px !important;
+    padding: 3px !important;
+}
